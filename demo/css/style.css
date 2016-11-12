@@ -1,0 +1,201 @@
+/* A few styles for the demo page */
+.container {
+	max-width: 1100px;
+}
+.parallax-container {
+	min-height: 450px;
+	line-height: 0;
+	height: auto;
+	color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+	width: 100%;
+}
+.nav-wrapper ul li a .fa,
+.side-nav .side-nav-items li a .fa {
+	font-size: 24px;
+}
+.brand-logo {
+	height: inherit;
+	padding: 0.5rem 0 !important;
+}
+.brand-logo img {
+	max-height: 100%;
+}
+.side-nav .logo .brand-logo {
+	padding: 0.5rem 0 0 !important;
+}
+.side-nav .logo .brand-logo:hover {
+	background-color: inherit;
+}
+.side-nav .side-nav-items {
+	margin-top: 0;
+}
+#index-banner .btn-large {
+	line-height: 3.4rem;
+}
+#index-banner .btn-large .fa {
+	margin-right: 1rem;
+	transform: translateY(3px);
+}
+h1.header {
+
+}
+.text-shadow {
+	text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.footer-logo {
+	max-height: 8rem;
+	margin: 0 auto;
+	opacity: 0.25;
+}
+.footer-copyright {
+	clear: both;
+}
+footer.page-footer {
+	margin-top: 0;
+}
+.page-footer .container .row {
+	height: inherit;
+}
+.page-footer .container .row .col {
+	height: inherit;
+}
+#scroll-up {
+	display: none;
+}
+blockquote {
+	border-left: 5px solid #c5cae9;
+}
+.faux-nav {
+	position: relative;
+}
+.faux-progress-bar {
+	display: block;
+	position: absolute;
+	height: 4px;
+	width: 100%;
+    margin: -4px 0 0 0;
+    border-radius: 0;
+    background-color: #9e9e9e;
+    transition: opacity .25s ease;
+}
+.faux-progress-amt {
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #42a5f5;
+    width: 45%;
+    transition: width .3s linear;
+}
+.collection .collection-item {
+	line-height: inherit;
+}
+:not(pre) > code[class*="language-"] {
+	display: inline-block;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding: 0.15rem 0.3rem 0;
+    margin: 0 0.1rem;
+    border-radius: 0.2rem;
+    transform: translateY(-0.2rem);
+}
+.options-text {
+	display: inline-block;
+	margin-left: 2rem;
+	font-size: smaller;
+}
+.options-text span.badge.new {
+	display: inline-block;
+	float: none;
+	line-height: 1.5rem;
+	margin-left: 0;
+	margin-right: 1rem;
+	transform: translateY(-0.2rem);
+}
+span.badge.new + span.badge.new {
+	margin-left: 1rem;
+}
+span.badge.new + span.badge.new:before {
+	content: "or";
+	position: absolute;
+	left: -1.35rem;
+	color: #9e9e9e;
+}
+.options-text span.badge.new:after {
+	display: none;
+}
+.options-text code[class*="language-"] {
+	background: #eeeeee;
+	text-shadow: none;
+	color: #9e9e9e;
+	transform: translateY(-0.075rem);
+}
+.options-text code[class*="language-"] .token {
+    color: #9e9e9e !important;
+}
+
+@media only screen and (max-width: 600px) {
+	h1.header {
+		font-size: 2.75rem;
+	}
+	.options-text {
+		display: block;
+		margin-left: 0;
+		margin-top: 1rem;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.parallax-container .section {
+		position: absolute;
+		top: 40%;
+	}
+	#index-banner .section {
+		top: 10%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.page-footer .container {
+		height: 25rem;
+	}
+	.footer-logo {
+		max-height: 15rem;
+	}
+	.flow-text {
+		font-size: 1.5rem;
+	}
+	:not(pre) > code[class*="language-"] {
+		font-size: 1.1rem;
+		padding: 0.175rem 0.3rem 0;
+	}
+}
+
+@media only screen and (min-width: 1350px) {
+	.code-row .col {
+		max-width: 75%;
+	}
+}
+
+/* Custom styles for scrollProgress.js */
+.progress-bar {
+	display: block;
+	position: absolute;
+	height: 4px;
+	width: 100%;
+    margin: -4px 0 0 0;
+    border-radius: 0;
+    background-color: #7986cb;
+    opacity: 0;
+    transition: opacity .25s ease;
+}
+.progress-amt {
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #1de9b6;
+    transition: width .3s linear;
+}

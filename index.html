@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>momentum.js</title>
+		<script src="https://use.fontawesome.com/f0aaca1591.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+		<link rel="stylesheet" href="demo/css/prism.css">
+		<link rel="stylesheet" href="demo/css/style.css">
+	</head>
+	<body>
+		<header id="top" class="scrollspy">
+			<div class="navbar-fixed">
+				<nav class="indigo lighten-1 white-text" role="navigation">
+					<div class="nav-wrapper container">
+						<a id="logo-container" href="/" class="brand-logo">
+							<img class="responsive-img" src="demo/img/logo.png" />
+						</a>
+						<ul class="right hide-on-med-and-down">
+							<li><a href="#get-started"><i class="material-icons left">check_circle</i> Get Started</a></li>
+							<li><a href="#customization"><i class="material-icons left">build</i> Customization</a></li>
+							<li><a href="https://github.com/sschoepke/momentum"><i class="fa fa-github left"></i> Source</a></li>
+							<li><a href="https://github.com/sschoepke/momentum/archive/master.zip"><i class="material-icons left">file_download</i> Download (.zip)</a></li>
+						</ul>
+						<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+					</div>
+				</nav>
+			</div>
+
+			<div id="nav-mobile" class="side-nav grey lighten-3">
+				<ul class="side-nav-items">
+					<li class="logo">
+						<a id="logo-container-mobile" href="/" class="brand-logo center">
+							<img class="responsive-img" src="demo/img/logo-dark.png" />
+						</a>
+					</li>
+					<li><div class="divider"></div></li>
+					<li><a href="#get-started"><i class="material-icons left">check_circle</i> Get Started</a></li>
+					<li><a href="#customization"><i class="material-icons left">build</i> Customization</a></li>
+					<li><a href="https://github.com/sschoepke/momentum"><i class="fa fa-github left"></i> Source</a></li>
+				</ul>
+			</div>
+
+			<div id="index-banner" class="parallax-container valign-wrapper">
+				<div class="section valign">
+					<div class="container">
+						<h1 class="header center white-text text-shadow">momentum.js</h1>
+						<div class="row center">
+							<h5 class="header col s12 light">A lightweight jQuery progress bar plugin that shows how far down the page you are as you scroll</h5>
+						</div>
+						<div class="row center">
+							<a href="https://github.com/sschoepke/momentum" id="github-button" class="btn-large waves-effect waves-light indigo lighten-1">
+								<i class="fa fa-github"></i>Get it Now
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="parallax"><img src="demo/img/aurora.jpg" alt="Aurora"></div>
+			</div>
+		</header>
+
+		<main id="main-content">
+			<div class="container">
+				<section class="section row">
+					<article class="col s12">
+						<p class="grey-text text-darken-3 flow-text"><strong><a href="https://github.com/sschoepke/momentum" class="indigo-text text-lighten-1">momentum.js</a></strong> is a lightweight jQuery plugin that generates a customizable progress bar which attaches to your app's fixed-position <code class="language-html">nav</code> element and measures how far down the page you are as you scroll.</p>
+						<p class="grey-text text-darken-3 flow-text"><strong>Want to see a demo?</strong></p>
+						<p class="grey-text text-darken-3 flow-text">You're looking at it! Scroll down the page to see the progress bar in action.</p>
+						<p class="grey-text text-darken-3 flow-text">By default, progress down the page is measured from the vertical center of the viewport. For this demo, we'll track scroll progress on the <code class="language-html">&lt;main id="main-content"&gt;</code> wrapper around the main content of this page.</p>
+					</article>
+
+					<div id="scroll-up" class="fixed-action-btn">
+						<a class="btn-floating btn-large indigo lighten-1" href="#top">
+							<i class="large material-icons">arrow_upward</i>
+						</a>
+					</div>
+
+					<article id="get-started" class="col s12 scrollspy">
+						<h3 class="indigo-text text-lighten-1">Get Started</h3>
+						<p class="grey-text text-darken-3 flow-text"><strong>Step 1:</strong></p>
+						<p class="grey-text text-darken-3 flow-text"><a href="https://github.com/sschoepke/momentum" class="indigo-text text-lighten-1">Clone</a> momentum.js into your project.</p>
+
+						<div class="row code-row">
+							<div class="col s12">
+								<pre>
+									<code class="language-bash">
+										git clone git@github.com:sschoepke/momentum.git your-project
+									</code>
+								</pre>
+							</div>
+						</div>
+
+						<p class="grey-text text-darken-3 flow-text"><em>- or -</em></p>
+						<p class="grey-text text-darken-3 flow-text"><a href="https://github.com/sschoepke/momentum/archive/master.zip" class="indigo-text text-lighten-1">Download</a> the files and copy momentum.js into your project.</p>
+						<p class="grey-text text-darken-3 flow-text"><strong>Step 2:</strong></p>
+						<p class="grey-text text-darken-3 flow-text">Be sure to include momentum.js after jQuery.</p>
+
+						<div class="row code-row">
+							<div class="col s12">
+								<pre>
+									<code class="language-html">
+										&lt;!-- Include jQuery and momentum.js --&gt;
+										&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"&gt;&lt;/script&gt;
+										&lt;script src="js/momentum.js"&gt;&lt;/script&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+
+						<p class="grey-text text-darken-3 flow-text"><strong>Step 3:</strong></p>
+						<p class="grey-text text-darken-3 flow-text">Initialize momentum.js, passing in the selector for the element you want to track. Below is an example of basic implementation. See the <a href="#customization" class="indigo-text text-lighten-1">Customization</a> section for documentation on how to further customize the plugin.</p>
+
+						<div class="row code-row">
+							<div class="col s12">
+								<pre>
+									<code class="language-javascript">
+										$('.my-class').momentum();
+									</code>
+								</pre>
+							</div>
+						</div>
+
+						<p class="grey-text text-darken-3 flow-text"><strong>That's it!</strong>
+						<p class="grey-text text-darken-3 flow-text">By default the plugin will generate a progress bar and append it to your <code class="language-html">nav</code> element, provided that it has been assigned the <code class="language-css">position: fixed</code> property in your CSS.</p>
+						<p class="grey-text text-darken-3 flow-text">Here's what the default progress bar looks like when appended to your navigation:</p>
+
+						<div class="section">
+							<nav class="container faux-nav grey lighten-3 center">
+								<span class="center grey-text text-darken-3">your navigation bar</span>
+								<div class="faux-progress-bar">
+									<div class="faux-progress-amt"></div>
+								</div>
+							</nav>
+						</div>
+					</article>
+				</section>
+			</div>
+
+			<section class="parallax-container valign-wrapper">
+				<div class="section valign">
+					<div class="container">
+						<div class="row center">
+							<h4 class="header col s12 light text-shadow">The minified version of momentum.js weighs in at a mere 1.66KB</h4>
+						</div>
+					</div>
+				</div>
+				<div class="parallax"><img src="demo/img/luner-lake.jpg" alt="Luner Lake"></div>
+			</section>
+
+			<div class="container">
+				<section class="section row">
+					<article id="customization" class="col s12 scrollspy">
+						<h3 class="indigo-text text-lighten-1">Customization</h3>
+						<p class="grey-text text-darken-3 flow-text">The momentum.js plugin can be easily customized to suit the needs of your application. The only requirement for it to work is jQuery and the selector for the element you want to track. This could be the entire <code class="language-html">body</code> element or just a portion of the page such as <code class="language-html">&lt;article class="content"&gt;</code>.</p>
+						<p class="grey-text text-darken-3 flow-text">This is the most simple implementation:</p>
+
+						<div class="row code-row">
+							<div class="col s12">
+								<pre>
+									<code class="language-javascript">
+										$('.my-class').momentum();
+									</code>
+								</pre>
+							</div>
+						</div>
+
+						<p class="grey-text text-darken-3 flow-text">Below is a list of optional parameters you can pass to the <code class="language-javascript">momentum()</code> function to customize the plugin.</p>
+
+						<div class="row code-row">
+							<div class="col s12">
+								<pre>
+									<code class="language-javascript">
+										// Defaults
+										$('.my-class').momentum({
+											barSelector: '',
+											customCss: false,
+											barColor: '#9e9e9e',
+											thickness: 4,
+											progressColor: '#42a5f5',
+											offset: 'middle',
+											minHeight: 0,
+											fadeInOut: true
+										});
+									</code>
+								</pre>
+							</div>
+						</div>
+
+						<ul class="collection with-header">
+							<li class="collection-header grey-text text-darken-3"><h4>Parameters</h4></li>
+							<li class="collection-item">
+								<h5 class="grey-text text-darken-3">barSelector<span class="options-text grey-text"><span class="grey new badge">string</span>(default: <code class="language-javascript">null</code>)</span></h5>
+								<p class="grey-text text-darken-3 flow-text">If no value is passed in the <code class="language-javascript">barSelector</code> parameter, the function will look for a <code class="language-html">nav</code> element with <code class="language-css">position: fixed</code>, then generate a progress bar <code class="language-html">&lt;div class="progress-bar"&gt;&lt;/div&gt;</code>, and append it to <code class="language-html">nav</code>. However, for some projects you may need the progress bar to be located elsewhere or have a different class than the default. If that's the case, simply add a <code class="language-html">div</code> to your markup with any class you like, then pass it to the function:</p>
+								<div class="row code-row">
+									<div class="col s12">
+										<pre>
+											<code class="language-html">
+												&lt;nav class="my-fixed-nav"&gt;
+													&lt;div class="my-progress-bar"&gt;&lt;/div&gt;
+												&lt;/nav&gt;
+												&lt;article class="my-class"&gt;
+													...
+												&lt;/article&gt;
+											</code>
+										</pre>
+										<pre>
+											<code class="language-css">
+												.my-fixed-nav {
+													position: fixed;
+												}
+											</code>
+										</pre>
+										<pre>
+											<code class="language-javascript">
+												$('.my-class').momentum({
+													barSelector: '.my-progress-bar'
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+							</li>
+							<li class="collection-item">
+								<h5 class="grey-text text-darken-3">customCss<span class="options-text grey-text"><span class="grey new badge">boolean</span>(default: <code class="language-javascript">false</code>)</span></h5>
+								<p class="grey-text text-darken-3 flow-text">You may wish to style the progress bar using your own CSS rather than the plugin defaults. If so, set <code class="language-javascript">customCss: true</code>, then add styles for <code class="language-css">.progress-bar</code> and <code class="language-css">.progress-amt</code>.</p>
+								<div class="row code-row">
+									<div class="col s12">
+										<pre>
+											<code class="language-css">
+												.progress-bar {
+													display: block;
+													position: absolute;
+													height: 4px;
+													width: 100%;
+													margin: -4px 0 0 0;
+													border-radius: 0;
+													background-color: #7986cb;
+												}
+												.progress-amt {
+													position: absolute;
+													top: 0;
+													left: 0;
+													bottom: 0;
+													background-color: #1de9b6;
+													transition: width .3s linear;
+												}
+											</code>
+										</pre>
+										<pre>
+											<code class="language-javascript">
+												$('.my-class').momentum({
+													customCss: true
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+							</li>
+							<li class="collection-item">
+								<h5 class="grey-text text-darken-3">barColor<span class="options-text grey-text"><span class="grey new badge">string</span>(default: <code class="language-javascript">'#9e9e9e'</code>)</span></h5>
+								<p class="grey-text text-darken-3 flow-text">Set the color of the progress bar.</p>
+							</li>
+							<li class="collection-item">
+								<h5 class="grey-text text-darken-3">thickness<span class="options-text grey-text"><span class="grey new badge">number</span>(default: <code class="language-javascript">4</code>)</span></h5>
+								<p class="grey-text text-darken-3 flow-text">Set the thickness of the progress bar.</p>
+							</li>
+							<li class="collection-item">
+								<h5 class="grey-text text-darken-3">progressColor<span class="options-text grey-text"><span class="grey new badge">string</span>(default: <code class="language-javascript">'#42a5f5'</code>)</span></h5>
+								<p class="grey-text text-darken-3 flow-text">Set the color of the progress amount.</p>
+							</li>
+							<li class="collection-item">
+								<h5 class="grey-text text-darken-3">offset<span class="options-text grey-text"><span class="grey new badge">string</span><span class="grey new badge">number</span>options: <code class="language-javascript">'middle', 'top', 'bottom', int</code> (default: <code class="language-javascript">'middle'</code>)</span></h5>
+								<p class="grey-text text-darken-3 flow-text">By default, the amount of scroll progress down the selected element is measured from the middle of the viewport. You may set this to <code class="language-javascript">'top'</code>, <code class="language-javascript">'bottom'</code> or even a numeric value.</p>
+								<div class="row code-row">
+									<div class="col s12">
+										<pre>
+											<code class="language-javascript">
+												$('.my-class').momentum({
+													offset: 'bottom'
+												});
+											</code>
+										</pre>
+										<pre>
+											<code class="language-javascript">
+												$('.my-class').momentum({
+													offset: 400
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+							</li>
+							<li class="collection-item">
+								<h5 class="grey-text text-darken-3">minHeight<span class="options-text grey-text"><span class="grey new badge">number</span>(default: <code class="language-javascript">0</code>)</span></h5>
+								<p class="grey-text text-darken-3 flow-text">Set the minimum height the selected element must be for the progress bar to activate. This is helpful, for example, if you're using it on articles of various lengths and you don't want the bar to show on the shorter ones.</p>
+							</li>
+							<li class="collection-item">
+								<h5 class="grey-text text-darken-3">fadeInOut<span class="options-text grey-text"><span class="grey new badge">boolean</span>(default: <code class="language-javascript">true</code>)</span></h5>
+								<p class="grey-text text-darken-3 flow-text">By default, the progress bar is hidden and fades in when the offset approaches the top of the selected element. It then fades out again after the selected element is no longer in the viewport. To deactivate this behavior, set <code class="language-javascript">fadeInOut: false</code>, which will make the bar visible at all times.</p>
+							</li>
+						</ul>
+					</article>
+				</section>
+			</div>
+		</main>
+
+		<section class="parallax-container valign-wrapper">
+			<div class="section valign">
+				<div class="container">
+					<div class="row center">
+						<h4 class="header col s12 light text-shadow">The element on the page that's being tracked for progress ends right here</h4>
+					</div>
+				</div>
+			</div>
+			<div class="parallax"><img src="demo/img/mountain.jpg" alt="Mountain"></div>
+		</section>
+
+		<footer id="page-footer" class="page-footer blue-grey darken-3">
+			<div class="container">
+				<div class="row">
+					<div class="col s12 valign-wrapper">
+						<img class="responsive-img valign footer-logo" src="demo/img/logo-dark.png" />
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					<a class="teal-text text-accent-3" href="https://github.com/sschoepke/momentum">momentum.js</a> by <a class="teal-text text-accent-3" href="https://github.com/sschoepke">sschoepke</a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+		<script src="demo/js/prism.js"></script>
+		<script src="demo/js/script.js"></script>
+		<script src="js/momentum.js"></script>
+		<script>
+			$(function() {
+				$('#main-content').momentum({
+					customCss: true
+				});
+			});
+		</script>
+	</body>
+</html>
